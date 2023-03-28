@@ -40,7 +40,7 @@ private:
 		for(int i = 0; i < loop; i++)
 			adc += analogReadMilliVolts(pin);
 
-		*t = adc/loop*0.1 - 2;
+		*t = (adc/loop) * 0.1 - 2;
 	}
 
 	void setTemperature(float *t)
